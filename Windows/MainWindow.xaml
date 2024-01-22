@@ -14,6 +14,13 @@
             </StackPanel>
         </DataTemplate>
 
+        <DataTemplate x:Key="chatPollingTemplate">
+            <StackPanel>
+                <TextBlock Text="{Binding Path=Message}"/>
+                <TextBlock Text="{Binding Path=Count}" />
+            </StackPanel>
+        </DataTemplate>
+
     </Window.Resources>
     
     <Grid x:Name="MainGrid">
@@ -32,12 +39,14 @@
                     <Grid Background="#FFE5E5E5">
                         <ListBox x:Name="ChatMessagesList"
                             ItemTemplate="{DynamicResource chatMessageTemplate}"/>
-
                     </Grid>
 
                 </TabItem>
                 <TabItem Header="Poller">
-                    <Grid Background="#FFE5E5E5"/>
+                    <Grid Background="#FFE5E5E5">
+                        <ListBox x:Name="ChatPollingList"
+                            ItemTemplate="{DynamicResource chatPollingTemplate}"/>
+                    </Grid>
                 </TabItem>
             </TabControl>
         </Grid>
