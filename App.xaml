@@ -1,0 +1,11 @@
+﻿<Application x:Class="youtube_chat_integration_wpf_prototype_testing.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:youtube_chat_integration_wpf_prototype_testing"
+             StartupUri="Windows/MainWindow.xaml"
+             ShutdownMode="OnExplicitShutdown"
+             Exit="App_Exit">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
